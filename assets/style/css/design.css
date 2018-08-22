@@ -2,6 +2,24 @@ body {
 	background-color: #2C2B27;
 }
 
+.k-wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+.k-nav {
+	height: 100%;
+	width: 200px;
+	float: left;
+	border-right: 2px solid #222;
+}
+
+.k-sandbox {
+	height: 100%;
+	width: calc(100% - 202px);
+	float: right;
+}
+
 .left,
 .right {
 	position: center;
