@@ -1,22 +1,22 @@
 {
-  "name": "electron-quick-start",
+  "name": "konjure-desktop-app",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Konjure website builder desktop application",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/Konjure/konjure-desktop-app",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Konjure",
+    "website",
+    "builder",
+    "ipfs",
+    "web3"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Konjure LLC",
+  "license": "LGPL-3.0",
   "devDependencies": {
-    "electron": "^2.0.0"
+    "electron": "^2.0.8"
   }
 }
