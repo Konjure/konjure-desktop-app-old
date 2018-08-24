@@ -17,6 +17,7 @@
   "author": "Konjure LLC",
   "license": "LGPL-3.0",
   "devDependencies": {
-    "electron": "^2.0.8"
+    "electron": "^2.0.8",
+    "ipfs-api": "^24.0.1"
   }
 }
