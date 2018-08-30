@@ -10,8 +10,54 @@ body {
 	cursor: auto;
 }
 
-.k-wrapper {
+.k-toolbar {
+	height: 26px;
+	width: 100%;
+	position: relative;
+	z-index: 10;
+	background-color: #191919;
+	-webkit-app-region: drag;
+}
+
+.k-toolbar img {
+	height: 16px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.k-toolbar-right {
 	height: 100%;
+	float: right;
+}
+
+.k-toolbar-button {
+	height: 100%;
+	width: 26px;
+	float: left;
+	-webkit-app-region: no-drag;
+}
+
+.k-toolbar-button img {
+	margin-left: 5px;
+	opacity: 0.5;
+}
+
+.k-toolbar-button:hover {
+	background-color: #333;
+	cursor: pointer;
+}
+
+#close:hover {
+	background-color: #E03A3A;
+}
+
+.k-toolbar-button:hover img {
+	opacity: 0.8;
+}
+
+.k-wrapper {
+	height: calc(100% - 26px);
 	width: 100%;
 }
 

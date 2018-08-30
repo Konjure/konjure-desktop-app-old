@@ -14,6 +14,7 @@ function createWindow() {
         height: 600,
         icon: 'assets/media/images/favicon.png',
         show: false,
+	frame: false
     });
 
     // Create the splash screen window.
@@ -25,7 +26,7 @@ function createWindow() {
         alwaysOnTop: true,
         movable: false,
         center: true,
-        skipTaskbar: true,
+        skipTaskbar: true
     });
 
     // Load splash window.
@@ -36,6 +37,7 @@ function createWindow() {
 
     mainWindow.on('ready-to-show', function () {
         splashWindow.destroy();
+	mainWindow.maximize();
         mainWindow.show();
     });
 
