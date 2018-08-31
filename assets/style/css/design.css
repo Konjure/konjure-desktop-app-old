@@ -79,6 +79,11 @@ body {
 .k-content {
 	height: 100%;
 	width: 100%;
+	display: none;
+}
+
+.k-content.current {
+	display: inline;
 }
 
 .k-content.gateway input {
@@ -113,7 +118,11 @@ body {
 	opacity: 0.5;
 }
 
-.k-option:not(.inactive):hover {
+.k-option.current {
+	background-color: #404040;
+}
+
+.k-option:not(.inactive):not(.current):hover {
 	background-color: #373737;
 	cursor: pointer;
 }
