@@ -106,6 +106,16 @@ body {
 	position: relative;
 	background-color: #2A2A2A;
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+	box-sizing: border-box;
+	padding-left: 12.5px;
+	padding-right: 12.5px;
+}
+
+.k-website {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 1;
 }
 
 .k-menu {
