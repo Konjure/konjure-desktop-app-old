@@ -2,7 +2,7 @@
   "name": "konjure-desktop-app",
   "version": "1.0.0",
   "description": "Konjure website builder desktop application",
-  "main": "main.js",
+  "main": "main.ts",
   "scripts": {
     "start": "electron ."
   },
