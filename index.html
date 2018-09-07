@@ -20,6 +20,7 @@
 				crossorigin="anonymous"></script>
 
 		<script src="assets/scripts/js/konjure-ui.min.js" type="text/javascript"></script>
+		<script src="assets/scripts/js/functionality.js" type="text/javascript"></script>
 		
 	</head>
 	
@@ -29,26 +30,57 @@
 			require('./renderer.js')
 		</script>
 		
+		<div class="k-toolbar no-select">
+			<img src="assets/media/images/konjure.png"/>
+			<div class="k-toolbar-right">
+				<div class="k-toolbar-button" id="min">
+					<img src="assets/media/images/minimize.png"/>
+				</div>
+				<div class="k-toolbar-button" id="max">
+					<img src="assets/media/images/maximize.png"/>
+				</div>
+				<div class="k-toolbar-button" id="restore">
+					<img src="assets/media/images/maximize.png"/>
+				</div>
+				<div class="k-toolbar-button" id="close">
+					<img src="assets/media/images/close.png"/>
+				</div>
+			</div>
+		</div>
+		
 		<div class="k-wrapper">
 			<div class="k-nav">
 				<div class="k-menu">
-					<div class="button k-option material active">Gateway <div class="k-status up"></div></div>
-					<div class="button k-option material active">Node <div class="k-status up"></div></div>
-					<div class="button k-option inactive">Cauldron <div class="k-status down"></div></div>
-					<div class="button k-option inactive">Bazaar <div class="k-status down"></div></div>
-					<div class="button k-option inactive">Hosting <div class="k-status down"></div></div>
+					<div class="button k-option material active no-select current">Gateway<br><span>Upload your site</span><div class="k-status up"></div></div>
+					<div class="button k-option material active no-select">Node<br><span>Peer-to-peer network</span><div class="k-status up"></div></div>
+					<div class="button k-option inactive no-select">Dashboard<br><span>Manage your site</span><div class="k-status down"></div></div>
+					<div class="button k-option inactive no-select">Bazaar<br><span>Plugin marketplace</span><div class="k-status down"></div></div>
+					<div class="button k-option inactive no-select">Hosting<br><span>Usage and billing</span><div class="k-status down"></div></div>
+					<div class="button k-option inactive no-select">Labs<br><span>Development kit</span><div class="k-status down"></div></div>
 					<br>
-					<div class="k-copyright">Konjure Desktop App v0.1</div>
+					<div class="k-copyright">Konjure Desktop App v0.1.0</div>
 				</div>
-				<img src="assets/media/images/ghost.svg" class="k-watermark"/>
+				<div class="button k-profile material">
+					<img src="assets/media/images/placeholder-profile.png" class="no-select"/>
+					<h5><img src="assets/media/images/currency.png" class="no-select"/> 0</h5>
+				</div>
 			</div>
 			<div class="k-sandbox">
-				<div class="k-content gateway">
+				<div class="k-content gateway current">
+					<div class="k-gateway-frame">
+						<div class="k-website">
+							
+						</div>
+						<img src="assets/media/images/ghost.svg" class="no-select"/>
+					</div>
+					<div class="k-gateway-toolbar">
+						
+					</div>
+				</div>
+				<div class="k-content node">
 					<div class="vertical-center-outer">
 						<div class="vertical-center-inner">
-							<p class="text-center">Upload your website files to the Decentralized Web</p>
-							<br>
-							<input type="file" class="text-center" accept="application/zip,application/x-zip,application/x-zip-compressed">
+							<p class="text-center">Node</p>
 						</div>
 					</div>
 				</div>

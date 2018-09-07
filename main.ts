@@ -1,21 +1,23 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron');
-const ipfsAPI = require('ipfs-api');
+var ipfsAPI = require('ipfs-api');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
-let mainWindow, splashWindow;
-let started = false;
+var mainWindow, splashWindow;
+var started = false;
 
 function startKonjure() {
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        width: 800,
+        width: 1000,
+        minWidth: 1000,
         height: 600,
+        minHeight: 500,
         icon: 'assets/media/images/favicon.png',
-        show: false,
         darkTheme: true,
-        autoHideMenuBar: true,
+        show: false,
+        frame: false
     });
 
     // Create the splash screen window.
@@ -27,14 +29,14 @@ function startKonjure() {
         alwaysOnTop: true,
         movable: false,
         center: true,
-        skipTaskbar: true,
+        skipTaskbar: true
     });
 
     // Load splash window.
-    splashWindow.loadURL(`file://${__dirname}/splash.html`);
+    splashWindow.loadURL("file://" + __dirname + "/splash.html");
 
     // and load the index.html of the app.
-    mainWindow.loadURL(`file://${__dirname}/index.html`);
+    mainWindow.loadURL("file://" + __dirname + "/index.html");
 
     mainWindow.on('ready-to-show', function () {
         setTimeout(function () {
@@ -44,8 +46,7 @@ function startKonjure() {
     });
 
     // Emitted when the window is closed.
-
-    splashWindow.on('closed', function() {
+    splashWindow.on('closed', function () {
         splashWindow = null;
     });
 
