@@ -175,7 +175,7 @@ body {
 }
 
 .k-option.inactive {
-	opacity: 0.5;
+	cursor: not-allowed;
 }
 
 .k-option.current {
