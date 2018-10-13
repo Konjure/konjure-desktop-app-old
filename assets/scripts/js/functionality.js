@@ -112,13 +112,15 @@ $(document).ready(function() {
 	$(".node-slider").click(function() {
 		
 		if(window.nodeStatus === false) {
-			$(".node-status").addClass("color");
-			$(".node-status").text("ON");
+			/*$(".node-status").addClass("color");*/
+			$(".node-status").addClass("starting");
+			$(".node-status").text("Starting...");
 			window.nodeStatus = true;
 			$(".k-menu .button:nth-child(2) .k-status").removeClass("waiting");
 			$(".k-menu .button:nth-child(2) .k-status").addClass("up");
 		} else {
-			$(".node-status").removeClass("color");
+			/*$(".node-status").removeClass("color");*/
+			$(".node-status").removeClass("starting");
 			$(".node-status").text("OFF");
 			window.nodeStatus = false;
 			$(".k-menu .button:nth-child(2) .k-status").removeClass("up");

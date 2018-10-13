@@ -417,7 +417,8 @@ body {
 }
 
 input:checked + .node-slider {
-	background-color: #7EC31E;
+	/*background-color: #7EC31E;*/
+	background-color: #EAE42F;
 }
 
 input:focus + .node-slider {
@@ -434,4 +435,10 @@ input:checked + .node-slider:before {
 
 .node-slider.round:before {
 	border-radius: 50%;
+}
+
+#percent-uploaded {
+	float: left;
+	margin-left: 10px;
+	margin-top: 11px;
 }

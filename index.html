@@ -72,12 +72,20 @@
 			<div class="k-sandbox">
 				<div class="k-content gateway current">
 					<div class="k-gateway-frame">
-						<div class="k-website"></div>
-						<img src="assets/media/images/ghost.svg" class="no-select"/>
+						<div class="k-website">
+							<div class="vertical-center-outer">
+								<div class="vertical-center-inner">
+									<img src="assets/media/images/drop.png" class="center"/>
+									<br>
+									<h6 class="text-center">Drag & drop a zip file here</h6>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="k-gateway-toolbar">
 						<label for="site-upload" class="button k-gateway-button slight-rounded material no-select upload-button left"><div>Upload your website (.zip)</div></label>
 						<input id="site-upload" type="file" accept="application/zip,application/x-zip,application/x-zip-compressed"/>
+						<h5 id="percent-uploaded">0%</h5>
 						<div class="button k-gateway-button material slight-rounded no-select publish-button right disabled">Publish</div>
 						<div class="button k-gateway-button material slight-rounded no-select cancel-button right disabled">Cancel</div>
 					</div>
